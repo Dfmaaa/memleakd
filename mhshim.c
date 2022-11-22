@@ -44,7 +44,7 @@ static void insert_m(struct ml **head, void *vp, size_t i){
     selected->next=(struct ml*)get_m(sizeof(struct ml));
     if(selected->next==NULL){
         if(PERR_F==1)[
-                printf("Internal allocation not permitted. Virtual offset with respect to entire list and its fields: %llu\n",voffsets); /*Hardcoded virtual offset because memory for head of list is being allocated.*/
+                printf("Internal allocation not permitted. Virtual offset with respect to entire list and its fields: %llu\n",voffsets);
         ]
         if(EXIT_F==1){
             exit(EXIT_FAILURE);
