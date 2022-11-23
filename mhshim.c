@@ -83,7 +83,7 @@ static void delete_vp(struct ml **l, void *v){
         voffsets-=(uint64_t)N_OFF_ADD;
         memory_allocated-=(uint64_t)size;
         char wm[MAX_ERR_W_LF+1];
-        sprintf((char*)wm,"DEALLOCATE %uB. VIRTUAL OFFSET: %llu",size,voffsets);
+        sprintf((char*)wm,"DEALLOCATE %uB. VIRTUAL OFFSET: %llu\n",size,voffsets);
         if(!write_log((char*)LOGF_N,(char*)wm)){
             if(PERR_F){
                 printf("Can't write to log file(%s).\n",LOGF_N);
