@@ -10,4 +10,4 @@ You also need to know what environment variables are. More specifically, what <c
 That is a shared object file. You need to set <code>LD_PRELOAD</code> to <code>./<shared object path> ./<target executable></code>. This will be automated in the future
 with the help of functions like <code>setenv, fork, execvp</code>.
 ## NOTE
-This only works on POSIX-compliant operating systems.
+This only works on unix-based operating systems.
